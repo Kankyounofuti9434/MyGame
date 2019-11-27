@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tama: {fileID: 0}
+  tamaPlefab: {fileID: 0}
 --- !u!198 &2518543690956236867
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4889,7 +4890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f741719dbbd1b4abd96f5b2e50f039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tama: {fileID: 0}
+  tama: {fileID: 8268631950353525256}
+  tamaPlefab: {fileID: 8268631950353525256}
 --- !u!198 &7767799500977967997
 ParticleSystem:
   m_ObjectHideFlags: 0

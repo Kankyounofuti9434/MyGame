@@ -8,6 +8,9 @@ public class CharacterController : MonoBehaviour
     InputController inputController;
     Animator animator;
 
+    GameObject tama;
+    GameObject tamaPlefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,5 +35,7 @@ public class CharacterController : MonoBehaviour
         {
             animator.SetTrigger("JYouka");
         }
+
+        
     }
 }

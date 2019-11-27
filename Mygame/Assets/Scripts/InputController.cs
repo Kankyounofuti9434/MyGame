@@ -22,10 +22,12 @@ public class InputController : MonoBehaviour
     float jump = 100f;
 
     Animator animator;
-    
-   
 
-    
+    public GameObject tama;
+
+    public GameObject tamaPlefab;
+
+
 
     private void Start()
     {
@@ -66,10 +68,18 @@ public class InputController : MonoBehaviour
         this.move = Input.GetAxis("LeftStickvetical");
         this.steering = Input.GetAxis("LeftStickHorizontal");
 
-       
-        
+        if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+        {
+            tama = Instantiate(tamaPlefab, transform.position + transform.forward * 10f + transform.up * 1, transform.rotation);
+        }
 
-      
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //  tama = Instantiate(tamaPlefab, transform.position + transform.forward * 10f + transform.up * 1, transform.rotation);
+        }
+
+
+
     }
 
     public float Move()
